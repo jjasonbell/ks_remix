@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>YC Remix</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <script src="https://use.fontawesome.com/3e76115930.js"></script>
+  <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+  <div id="container">
+      <header class="landing-header">
+          <div class="content--centered">
+            <img src="assets/logo.png"
+               width="400" height="200" draggable="false"/>
+              <!--
+              <h2><em class="color-white">YC Remix</em></h2>
+              -->
+        </div>
+      </header>
+      <main>
+        <div class="content--centered">
+          <div class="announcement">
+              <button onclick="change()" class="button" id="remix">
+                <img src="assets/button_icon.png" width="80" height="25 draggable="false"/>
+              </button>
+          </div>
+      </main>
+      <div class="footer">
+          <p><span style="color:white">Created by <a href="https://github.com/jjasonbell">Jason Bell</a></br>
+          Read about YC Remix: <a href="https://medium.com/@j_jason_bell/yc-remix-f74cef79a636#.kxa1tf3fv" target=_blank>
+          <i class="fa fa-medium"></i></a></p></span>
+      </div>
+  </div>  <!-- end container -->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/wrand.js"></script>
+  <script src="js/define_data.js"></script>
+  <script>
+    function change() {
+      var co = weightedRand(ycarray);
+      var target = targets[Math.floor(Math.random()*targets.length)];
+      var $el = $(".announcement").find(".output");
+      var content = '<p class="output">' + '<span style="color:#60AADF">' + 
+        co['Name'] + ' for ' + 
+        target + '</span>' + '</br></br>' +  
+        '<a href="' + co['URL'] + '" target = _blank>' +  co['Name'] + '</a>: ' + co['Description'] + '</p>' 
+      if (!$el.length) {
+        $(".announcement").append(content);
+      } else {
+        $el.replaceWith(content);
+      }
+    }
+  </script>
+</body>
+</html>
