@@ -3141,7 +3141,7 @@ p {
 }
 
 .output a {
-    color: #F26522;
+    color: #034752;
 }
 
 a {
@@ -3340,9 +3340,9 @@ p.bottom-right {
     border: 6px solid;
     border-radius: 60px;
     /*
-    border-color: #F26522;
+    border-color: #034752;
     */
-    border-color: #60AADF;
+    border-color: #272727;
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
     cursor: pointer;
@@ -3399,7 +3399,7 @@ p.bottom-right {
 }
 
 .footer {
-    background: #60AADF;
+    background: #272727;
     text-align: center;
     margin-bottom: 0;
     padding-top: 10em;
@@ -3443,7 +3443,7 @@ p.bottom-right {
     padding: 5em 0;
     padding-top: 10em;
     margin-bottom: 4em;
-    background: #F26522;
+    background: #034752;
     position: relative;
     -webkit-user-select: none;
     -moz-user-select: none;

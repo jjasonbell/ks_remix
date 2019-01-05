@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>YC Remix</title>
+  <title>KS Remix</title>
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   <script src="https://use.fontawesome.com/3e76115930.js"></script>
@@ -14,9 +14,9 @@
       <header class="landing-header">
           <div class="content--centered">
             <img src="assets/logo.png"
-               width="400" height="200" draggable="false"/>
+               width="500" height="200" draggable="false"/>
               <!--
-              <h2><em class="color-white">YC Remix</em></h2>
+              <h2><em class="color-white">KS Remix</em></h2>
               -->
         </div>
       </header>
@@ -29,9 +29,7 @@
           </div>
       </main>
       <div class="footer">
-          <p><span style="color:white">Created by <a href="https://github.com/jjasonbell">Jason Bell</a></br>
-          Read about YC Remix: <a href="https://medium.com/@j_jason_bell/yc-remix-f74cef79a636#.kxa1tf3fv" target=_blank>
-          <i class="fa fa-medium"></i></a></p></span>
+          <p><span style="color:white">Created by <a href="https://github.com/jjasonbell">Jason Bell</a></span></p>
       </div>
   </div>  <!-- end container -->
 
@@ -41,11 +39,11 @@
   <script src="js/define_data.js"></script>
   <script>
     function change() {
-      var co = weightedRand(ycarray);
+      var co = weightedRand(ksarray);
       var target = targets[Math.floor(Math.random()*targets.length)];
       var $el = $(".announcement").find(".output");
-      var content = '<p class="output">' + '<span style="color:#60AADF">' + 
-        co['Name'] + ' for ' + 
+      var content = '<p class="output">' + '<span style="color:#2b2727">' + 
+        co['Name'] + ' FOR ' + 
         target + '</span>' + '</br></br>' +  
         '<a href="' + co['URL'] + '" target = _blank>' +  co['Name'] + '</a>: ' + co['Description'] + '</p>' 
       if (!$el.length) {
